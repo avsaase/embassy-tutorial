@@ -1,0 +1,1 @@
+gdb-multiarch target/thumbv7em-none-eabihf/debug/embassy-tutorial -q -x ./openocd.gdb
