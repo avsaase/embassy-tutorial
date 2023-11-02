@@ -2,7 +2,7 @@
 chip = "STM32F303VCTx"
 
 [default.reset]
-halt_afterwards = true
+halt_afterwards = false
 
 [default.rtt]
 enabled = true
