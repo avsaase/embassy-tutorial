@@ -1,9 +1,8 @@
-[package]
-name = "embassy-tutorial"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
+members = ["button-blinky"]
 
-[dependencies]
+[workspace.dependencies]
 embassy-stm32 = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = [
     "nightly",
     "defmt",
