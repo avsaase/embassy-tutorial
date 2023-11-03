@@ -54,29 +54,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
 
 [[package]]
-name = "button-blinky"
-version = "0.1.0"
-dependencies = [
- "cortex-m",
- "cortex-m-rt",
- "defmt",
- "defmt-rtt",
- "embassy-executor",
- "embassy-futures",
- "embassy-stm32",
- "embassy-sync",
- "embassy-time",
- "embassy-usb",
- "embedded-hal 0.2.7",
- "embedded-storage",
- "futures",
- "heapless",
- "nb 1.1.0",
- "panic-probe",
- "static_cell",
-]
-
-[[package]]
 name = "bxcan"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -363,6 +340,29 @@ dependencies = [
  "embedded-hal 0.2.7",
  "futures-util",
  "heapless",
+]
+
+[[package]]
+name = "embassy-tutorial"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "defmt",
+ "defmt-rtt",
+ "embassy-executor",
+ "embassy-futures",
+ "embassy-stm32",
+ "embassy-sync",
+ "embassy-time",
+ "embassy-usb",
+ "embedded-hal 0.2.7",
+ "embedded-storage",
+ "futures",
+ "heapless",
+ "nb 1.1.0",
+ "panic-probe",
+ "static_cell",
 ]
 
 [[package]]
