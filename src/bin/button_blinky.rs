@@ -22,11 +22,11 @@ async fn led_task(led: AnyPin) {
     loop {
         let delay = BLINK_MS.load(atomic::Ordering::Relaxed);
         led.toggle();
-        Timer::after(Duration::from_millis(delay.into())).await;
         info!(
             "Led turned {}",
             if led.is_set_high() { "on" } else { "off" }
         );
+        Timer::after(Duration::from_millis(delay.into())).await;
     }
 }
 
