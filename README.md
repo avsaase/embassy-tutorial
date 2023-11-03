@@ -11,7 +11,7 @@ The environment setup for this project is the same as for the new Rust Embedded 
 1. Build and flash:
 
 ```shell
-cargo embed
+cargo embed --bin <binary>
 ```
 
 2. To debug, in a separate terminal:

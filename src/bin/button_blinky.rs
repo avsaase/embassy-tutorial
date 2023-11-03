@@ -5,13 +5,14 @@
 use core::sync::atomic::{self, AtomicU32};
 
 use defmt::info;
+use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_stm32::{
     exti::ExtiInput,
     gpio::{AnyPin, Input, Level, Output, Pin, Pull, Speed},
 };
 use embassy_time::{Duration, Timer};
-use {defmt_rtt as _, panic_probe as _};
+use panic_probe as _;
 
 static BLINK_MS: AtomicU32 = AtomicU32::new(2000);
 
